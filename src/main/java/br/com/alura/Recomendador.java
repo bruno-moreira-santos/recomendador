@@ -22,7 +22,7 @@ public class Recomendador {
 	}
 	
 	private DataModel getModelo(final String PATH) throws IOException {
-		final File FILE = new File(PATH);
+		final File FILE = new File("src/main/resources/" + PATH);
 		final DataModel DATA_MODEL = new FileDataModel(FILE);
 		return DATA_MODEL;
 	}
